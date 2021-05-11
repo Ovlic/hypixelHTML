@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            .itemdata{
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius: 4px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                word-wrap: normal;
+                display: inline-block;
+                font-family: consolas;
+                font-size: 16px;
+                line-height: 80%;
+            }
+            .spacer{
+                line-height: 80%;
+            }
+        </style>
+
+<script src="require.js"></script>
+<script src="jquery.js"></script>
+<script src="thejson.js"></script>
+<script src="testjson.js"></script>
+        
+        <div class="itemdata">
+        <h1 id="name">Item</h1>
+        <p id="buy">Buy Price</p>
+        <p id="npc-buy">NPC Buy Price</p>
+        <p id="save-buy">Save amount</p>
+        <p>------------------------------------</p>
+        <p id="sell">Sell Price</p>
+        <p id="npc-sell">NPC Sell Price</p>
+        <p id="save-sell">Get amount</p>
+        </div>
+        
+        <div class="itemdata">
+        <h1 id="name2">Item</h1>
+        <p id="buy2">Buy Price</p>
+        <p id="npc-buy2">NPC Buy Price</p>
+        <p id="save-buy2">Save amount</p>
+        <p>------------------------------------</p>
+        <p id="sell2">Sell Price</p>
+        <p id="npc-sell2">NPC Sell Price</p>
+        <p id="save-sell2">Get amount</p>
+        </div>
+        <p class="spacer"></p>
+
+        <div class="itemdata">
+            <h1 id="name3">Item</h1>
+            <p id="buy3">Buy Price</p>
+            <p id="npc-buy3">NPC Buy Price</p>
+            <p id="save-buy3">Save amount</p>
+            <p>------------------------------------</p>
+            <p id="sell3">Sell Price</p>
+            <p id="npc-sell3">NPC Sell Price</p>
+            <p id="save-sell3">Get amount</p>
+        </div>
+
+        <div class="itemdata">
+            <h1 id="name4">Item</h1>
+            <p id="buy4">Buy Price</p>
+            <p id="npc-buy4">NPC Buy Price</p>
+            <p id="save-buy4">Save amount</p>
+            <p>------------------------------------</p>
+            <p id="sell4">Sell Price</p>
+            <p id="npc-sell4">NPC Sell Price</p>
+            <p id="save-sell4">Get amount</p>
+        </div>
+
+        <div class="itemdata">
+            <h1 id="eb">Item</h1>
+            <p id="eb-buy">Buy Price</p>
+            <p id="eb-npcbuy">NPC Buy Price</p>
+            <p id="eb-save-buy">Save amount</p>
+            <p>------------------------------------</p>
+            <p id="eb-sell">Sell Price</p>
+            <p id="eb-npcsell">NPC Sell Price</p>
+            <p id="eb-save-sell">Get amount</p>
+        </div>
+
+        <script async>
+            const eb = document.getElementById("eb")
+            const eb_buy = document.getElementById("eb-buy")
+            const eb_npcbuy= document.getElementById("eb-npcbuy")
+            const eb_savebuy = document.getElementById("eb-save-buy")
+            const eb_sell  = document.getElementById("eb-sell")
+            const eb_npcsell = document.getElementById("eb-npcsell")
+            const eb_savesell = document.getElementById("eb-save-sell")
+
+            const name = document.getElementById("name");
+            const baz_buy = document.getElementById("buy");
+            const npc_buy = document.getElementById("npc-buy");
+            const baz_sell = document.getElementById("sell");           
+            const npc_sell = document.getElementById("npc-sell");
+            const save_buy = document.getElementById("save-buy")
+            const save_sell = document.getElementById("save-sell")
+
+            const name2 = document.getElementById("name2");
+            const baz_buy2 = document.getElementById("buy2");
+            const npc_buy2 = document.getElementById("npc-buy2");
+            const baz_sell2 = document.getElementById("sell2");           
+            const npc_sell2 = document.getElementById("npc-sell2");
+            const save_buy2 = document.getElementById("save-buy2")
+            const save_sell2 = document.getElementById("save-sell2")
+
+            const name3 = document.getElementById("name3");
+            const baz_buy3 = document.getElementById("buy3");
+            const npc_buy3 = document.getElementById("npc-buy3");
+            const baz_sell3 = document.getElementById("sell3");           
+            const npc_sell3 = document.getElementById("npc-sell3");
+            const save_buy3 = document.getElementById("save-buy3")
+            const save_sell3 = document.getElementById("save-sell3")
+
+            const name4 = document.getElementById("name4");
+            const baz_buy4 = document.getElementById("buy4");
+            const npc_buy4 = document.getElementById("npc-buy4");
+            const baz_sell4 = document.getElementById("sell4");           
+            const npc_sell4 = document.getElementById("npc-sell4");
+            const save_buy4 = document.getElementById("save-buy4")
+            const save_sell4 = document.getElementById("save-sell4")
+
+            name.style.textDecoration = "underline";
+            name2.style.textDecoration = "underline";
+            name3.style.textDecoration = "underline";
+            name4.style.textDecoration = "underline";
+
+            data = myfunction("WHEAT", name, baz_buy, npc_buy, baz_sell, npc_sell, save_buy, save_sell, 2.3, 1)
+            data2 = myfunction("POTATO_ITEM", name2, baz_buy2, npc_buy2, baz_sell2, npc_sell2, save_buy2, save_sell2, 2.3, 1)
+            data3 = myfunction("CARROT_ITEM", name3, baz_buy3, npc_buy3, baz_sell3, npc_sell3, save_buy3, save_sell3, 3, 2.3)
+            data4 = myfunction("SEEDS", name4, baz_buy4, npc_buy4, baz_sell4, npc_sell4, save_buy4, save_sell4, 0, 0.5)
+            data4 = myfunction("ENCHANTED_BREAD", eb, eb_buy, eb_npcbuy, eb_sell, eb_npcsell, eb_savebuy, eb_savesell, 0, 0.5)
+
+        </script>
+    </body>
+</html>

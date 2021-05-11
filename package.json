@@ -1,0 +1,16 @@
+{
+  "name": "robloxhtml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testjson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "jquery": "^3.6.0",
+    "node-fetch": "^2.6.1"
+  }
+}
